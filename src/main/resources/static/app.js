@@ -1,5 +1,7 @@
+const serverURL = "wss://socket-app-jc6z.onrender.com/gs-guide-websocket";
 const stompClient = new StompJs.Client({
-    brokerURL: 'ws://localhost:8080/gs-guide-websocket'
+    // brokerURL: 'wss://localhost:8080/gs-guide-websocket'
+    brokerURL:serverURL
 });
 
 stompClient.onConnect = (frame) => {
